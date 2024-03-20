@@ -1,0 +1,13 @@
+<h1><%= @book.title %></h1>
+
+<p>
+  <strong>Price: </strong> $<%= @book.price %><br />
+  <strong>Subject :</strong> <%= @book.subject.name %><br />
+  <strong>Created Date:</strong> <%= @book.created_at %><br />
+</p>
+
+<p><%= @book.description %></p>
+
+<hr />
+
+<%= link_to 'Back', {:action => 'index'} %>
